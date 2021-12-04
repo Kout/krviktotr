@@ -1,0 +1,18 @@
+*{
+	font-family: Ubuntu, sans-serif;
+}
+table, tr, th, td{
+	border: 2px #999 solid;
+}
+table{
+	border-collapse: collapse;
+}
+th, td{
+	padding: .2em;
+}
+td{
+	text-align: right;
+}
+td:first-child{
+	text-align: left;
+}

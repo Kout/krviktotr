@@ -1,0 +1,2 @@
+RewriteEngine On   
+RewriteRule ^(.*).flt$ %{DOCUMENT_ROOT}/filtr/filtruj/index.php?str=$1 [L,QSA]

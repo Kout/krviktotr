@@ -1,0 +1,21 @@
+#napln, .nadpisy, .nadpisy:first-of-type, .napln, .napln1, #vycet, #nadhlava, #podhlava, #pod-podhlava, h6{
+	border-color: #6d023d;
+}
+.oddelitko {
+	color: #6d023d;
+}
+#podhlava {
+	background-color: #ff1494;
+}
+.nadpisy, #nadpis, #vycet, #pod-podhlava {
+	background-color: #ff7fc5;
+}
+#obsah, #nadhlava {
+	background-color: #ffb4e5;
+}
+#napln, .napln, .napln1{
+	background-color: #ffe9f7;
+}
+.nadpisy{
+line-height: 50px;
+}

@@ -1,0 +1,6 @@
+RewriteEngine On   
+
+RewriteRule ^(.*)/(.*)/(.*)/(.*)\.kt$ %{DOCUMENT_ROOT}/neu/str/$1/$1.php?odd=$1&podstr=$2&pod_podstr=$3&ceho=$4 [L,QSA]
+RewriteRule ^(.*)/(.*)/(.*)\.kt$ %{DOCUMENT_ROOT}/neu/str/$1/$1.php?odd=$1&podstr=$2&pod_podstr=$3 [L,QSA]
+RewriteRule ^(.*)/(.*)\.kt$ %{DOCUMENT_ROOT}/neu/str/$1/$1.php?odd=$1&podstr=$2 [L,QSA]
+RewriteRule ^(.*)\.kt$ %{DOCUMENT_ROOT}/neu/str/$1/$1.php?odd=$1 [L,QSA]

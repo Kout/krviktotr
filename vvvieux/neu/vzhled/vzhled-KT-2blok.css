@@ -1,0 +1,76 @@
+/*pod hlavou jsou 2 bloky vlevo užší výčet, cca 1/3, vlevo náplň, cca 2/3
+1) živě, tvorba --> 1pocin.css
+    v náplni jeden nadpis daného počinu a pod ním obsah se záložkami
+
+2) novinky, živě, tvorba, o KT, ke stažení, kontakt
+    v náplni více nadpisů bez obsahu 
+    většina stránek
+*/
+
+#napln {
+	min-height: 25em;
+	margin-top: 25px;
+	border: 1px #000 solid;
+	border-top: none;
+}
+
+.nadpisy {
+	height: 50px;
+	line-height: 60px;
+	margin-top: 0em;
+	border: 1px #000 solid;
+	border-left: none;
+	border-top-right-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+	border-bottom-right-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+}
+.nadpisy:first-of-type{
+	position: relative;
+	top: -25px;/*aby nevykukovalo rámovní náplně pod oblym rohem*/
+	left: -1px;
+	width: 598px;
+	border-left: 1px #000 solid;
+}
+.nadpisy .datum, .nadpisy p {
+	display: inline;
+	font-size: .75em;
+}
+.napln {
+	font-size: .75em;
+	min-height: 5em;
+	padding: 1.5em;
+	border-bottom: none;
+}
+  
+#vycet {
+	font-size: .75em;
+	float: left;
+	width: 225px;
+	min-height: 800em;
+	padding: 10px;
+	margin-left: 40px;
+	border-width: 1px;
+	border-style: solid;
+	border-top-left-radius: 25px;
+	-webkit-border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+}
+
+#vycet li{
+display: block;
+margin-bottom: 1.5em;
+}
+#vycet a{
+font-weight: bold;
+}
+.rubrika{
+display: inline;
+color: maureen !important;
+font-style: italic;
+}
+#vycet .oddelitko{
+	font-size: 100%;
+}

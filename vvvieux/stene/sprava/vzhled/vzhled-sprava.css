@@ -1,0 +1,106 @@
+*{
+	/*color: #092964;*/
+}
+body{
+	font-family: Ubuntu, sans-serif;
+	/*min-height: 950px;*/
+}
+.tabulkyFotek{
+	width: 100%;
+}
+caption{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: .4em;
+}
+.cisloVTabulce{
+	text-align: right;
+}
+.smazat{
+	text-align: center;
+}
+.nova{ /*odkaz na vložení nového zápisu*/
+	
+/* 	text-align: center;  */
+}
+legend, label, h6{
+	/*font-size: 1em;*/
+	font-weight: bold;
+	margin-bottom: .2em;
+}
+
+fieldset legend{
+	font-size: 1.2em;
+}
+fieldset fieldset legend{
+	font-size: 1.1em;
+}
+
+.prihl input{
+ 	position: static;  
+	font-weight: bold;	
+}
+.horni{
+	font-weight: bold;
+}
+
+h1{
+	font-size: 1.5em;
+	margin-left: .5em;
+}
+
+p, h6{
+	margin: 0;
+}
+h6{
+	margin-top: 1em;
+}
+p{
+	margin-bottom: 1em;
+}
+a img{
+	border:0;
+}
+a:hover{
+/* 	*/
+	text-decoration: underline;
+}
+ul a{
+	font-weight: bold;
+}
+ul a:hover, .tu{
+	color: #C5292A; 
+	text-decoration: none;
+}
+hr{
+	clear: both;
+	visibility: hidden;
+}
+.vypis{
+	font-size: .8em;
+	width: 70%;
+	padding: 1%;
+	border: 1px #888 solid;
+}
+.tlacitko{
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 1em;
+}
+.tlacitko:before{
+  	content: "\21D0\00A0";
+}
+.ie .tlacitko:before{
+  	content: inherit;
+}
+.tlacitko:link, .tlacitko:visited {
+	color: #092964;
+}
+.tlacitko:hover{
+	color: #C5292A;
+}
+.pozn{
+	font-weight: normal !important;
+	font-size: 75%;
+}

@@ -1,0 +1,109 @@
+@pismo: #000;
+@ruda: #D82C33;
+@bezova: #F3ECD2;
+@hutna: #47A;
+@pozadi: #FFF;
+body{
+	color: @pismo;
+	font: 1em/140% 'Verdana', sans-serif;
+	background-color: @pozadi;
+	width: 960px;
+	margin: 2em auto;
+	h1,h2,h3,.reserve{
+		color: @pozadi;
+		font-weight: bold;
+		background-color: @ruda;
+		display: inline-block;
+		padding: .1em .4em;
+		margin-bottom: .5em;
+	}
+	h1{
+		font-size: 1.5em;
+		line-height: 1.2em;
+	}
+	h2,h3{
+		font-size: 1.2em;
+	}
+	h3,h4,h5{
+		font-weight: bold;
+	}
+	blockquote,q{
+		font-style: italic;
+		quotes: none;
+		&:before{
+			content: '\201E';
+		}
+		&:after{
+			content: '\201C';
+		}
+	}
+	a.reserve{
+		display: inline-block;
+	}
+	img{
+		width: 500px;
+	}
+	#stat{
+		float: right;		
+		width: 440px;
+	}
+	div.reserve{
+ 		display: none;  
+	}
+	div.reserve{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		height: 100%;
+		width: 100%;
+		form{
+			position: absolute;
+			top: 15%;
+			left: 40%;
+/* 				height: 30%;  */
+			width: 55%;
+			padding: 1%;
+			margin-left: -225px;  
+			margin-top: 0;
+			input, button{
+				padding: .2em .4em;
+				margin-bottom: .5em;
+			}
+			input[type=submit]{
+				margin-top: 1em;
+			}
+			#web{
+				display: none;
+			}
+		}
+	}
+	div.reserve{
+			background-color: fadeout(@pismo, 20%);
+			color: @pismo;
+			form{
+				background-color: @pozadi;
+				border: 1px @ruda solid;
+				legend, label{
+					font-weight: bold;
+				}
+				legend, label{
+					font-size: 1.2em;
+					.pozn{
+						font-size: .66em;
+					}
+				}
+				label{
+					font-size: 1em;
+				}
+				input, textarea{
+					border: 1px lighten(@pismo, 50%) solid;
+				}
+				input[type='submit'], button{
+					font-weight: bold;
+					background-color: @ruda;
+					border: 0;
+				}				
+			}
+		}
+}

@@ -1,0 +1,104 @@
+#stat div h2 {
+	position: relative;
+	left: -1px;
+	text-align:left;
+	width: 410px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	margin-right: px;
+	border: 1px #000 solid;
+	border-top: 0;
+	border-bottom-right-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	}
+#napln, #vypis, #nadhlava, #podhlava, #stat div h2{
+	border-color: #025c7a;
+}
+.oddelitko {
+	color: #025c7a;
+}
+#podhlava {
+	background-color: #00bfff;
+}
+#nadpis, #vypis, #pod-podhlava {
+	background-color: #74dcff;
+}
+#obsah, #nadhlava {
+	background-color: #b3ecff;
+}
+#napln {
+	background-color: #d6f5ff;
+}
+#pod-podhlava {
+display: none;
+}
+#stat{
+	width: 875px;
+}
+#stat div {
+	float: right;
+	width: 420px;
+	height: 350px;
+	margin: 10px;
+	background-color: #d6f5ff;
+	border: 1px #025c7a solid;
+}
+#stat div:first-child, #stat div:nth-of-type(3){
+	margin-right: 0;
+}
+#stat div:nth-of-type(2), #stat div h2{
+	background-color: #74dcff;
+}
+#stat div:first-child{
+	text-align:center;
+}
+#stat div:first-child img{
+	margin: 44px 0;
+	border: 1px #025c7a solid;
+}
+#stat div:nth-of-type(2){
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+	border-top-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+}
+#stat div:first-child, #stat div:first-child h2{
+	border-top-right-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+}
+#stat div:nth-of-type(3){
+	border-bottom-right-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+}
+#stat div:nth-of-type(4){
+	border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomleft: 25px;
+}
+p.datum{
+font-weight: normal;
+}
+ul.vypis {
+	font-size: .75em;
+	margin: 10px;
+	background-color: #d6f5ff;
+}
+ul.vypis li{
+display: block;
+margin-bottom: 1.5em;
+}
+ul.vypis a{
+font-weight: bold;
+}
+.rubrika{
+display: inline;
+color: maureen !important;
+font-style: italic;
+}
+.vypis .oddelitko{
+	font-size: 100%;
+}

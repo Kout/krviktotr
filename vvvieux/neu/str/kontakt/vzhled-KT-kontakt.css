@@ -1,0 +1,27 @@
+#napln, .nadpisy, .nadpisy:first-of-type, .napln, .napln1, #vycet, #nadhlava, #podhlava, #pod-podhlava, h6 {
+	border-color: #87871c;
+}
+.oddelitko {
+	color: #87871c;
+}
+#podhlava {
+	background-color: #ffff00;
+}
+#podhlava a:link, #podhlava a:visited{
+color: #000;
+}
+#podhlava a:hover, #podhlava a:active{
+color: #fff;
+}
+.nadpisy, #nadpis, #vycet, #pod-podhlava {
+	background-color: #ffff74;
+}
+#napln, .napln, .napln1{
+	background-color: #ffffd6;
+}   
+#obsah, #nadhlava {
+	background-color: #ffffb3;
+}
+.nadpisy{
+line-height: 50px;
+}

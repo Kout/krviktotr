@@ -1,0 +1,18 @@
+#nadhlava, #podhlava{
+width: 898px;
+}
+#pod-podhlava {
+	display: block;
+}
+#telo, #vykryt {
+	top: 100px;
+}
+#nadpis-obsah-obal, #napln, #vycet-vrch  {
+	top: 85px;
+}
+#obsah {
+	top: 125px;
+}
+#vycet{
+top: 10px;
+}

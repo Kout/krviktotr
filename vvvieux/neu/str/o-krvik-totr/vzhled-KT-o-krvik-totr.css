@@ -1,0 +1,55 @@
+#napln, .nadpisy, .nadpisy:first-of-type, .napln, .napln1, #vycet, #nadhlava, #podhlava, #pod-podhlava, h6 {
+	border-color: #a60000;
+}
+.oddelitko {
+	color: #a60000;
+}
+#podhlava {
+	background-color: #f00;
+}
+.nadpisy, #nadpis, #vycet, #pod-podhlava {
+	background-color: #ff7373;
+}
+#obsah, #nadhlava {
+	background-color: #ffb2b2;
+}
+#napln, .napln, .napln1{
+	background-color: #ffd5d5;
+}
+.nadpisy{
+
+}
+#napln {
+	margin-top: 25px;
+}
+#napln h6, #napln ul, #napln p{
+	font-size: 80%;
+}
+#nadpis {
+	font-size: 1em;
+	right: 0px;
+	width: 598px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px #a60000 solid;
+	border-bottom: 1px #a60000 solid;
+	border-top-right-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+	border-bottom-right-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	border-bottom-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomleft: 25px;
+}
+#nadpis h1{
+	padding-left: 1em;
+}
+#nadpis h1 span{
+	font-weight: normal;
+}
+#vycet span{
+	font-size: 100% !important; /*specielně kvůli Petře Biňovcové, jíž se kvůli délce jména zmenšoval font-size natvrdo v DB řádkovým stylem v atributu*/
+	text-decoration: underline;
+}

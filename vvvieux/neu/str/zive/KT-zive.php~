@@ -1,0 +1,4 @@
+<?php 
+$odd =  'zive';
+include '../../vklad/vklad.php';
+?>

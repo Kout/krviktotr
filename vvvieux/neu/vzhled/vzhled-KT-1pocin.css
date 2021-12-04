@@ -1,0 +1,50 @@
+#napln{
+	padding: 25px;	
+	margin-top: 80px;	/*výška pozicovaných prvků je 100px, ale spodní má border-radius 15px*/
+}
+#nadpis, #obsah {
+	width: 598px;
+	height: 50px;
+}
+#nadpis {
+	position: absolute;
+	top:0;
+	line-height: 50px;
+	border: 1px #000 solid;
+	border-bottom: none;
+	border-top-right-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+}
+#nadpis p, #nadpis .datum, .nadpisy p, .nadpisy .datum {
+	display: inline;
+	font-size: .75em;
+}
+#obsah {
+	position: absolute;
+	top: 50px;
+	border-top: none;
+	border: 1px #000 solid;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	-moz-border-radius-bottomright: 25px;
+}#obsah ul{
+	padding-left: 1em;
+}
+#obsah li {
+	margin-right: .1em;
+	margin-left: -0.3em;
+}
+#obsah .oddelitko{
+	padding: 0;
+	margin:0;
+}
+#obsah hr{
+	height: 1px;
+	margin-left: -1em;
+	border:none;
+	border-top: 1px #000 solid;
+}

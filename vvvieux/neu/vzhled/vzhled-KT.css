@@ -1,0 +1,190 @@
+* {
+	font-family: 'Verdana', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+body {             
+	font-size: 100%;
+	margin: 0 auto;
+	background-color: #eee;
+	background-image: url(../obr/podklad.png);
+	background-position: 5px 140px;
+	background-attachment: fixed;
+}
+h1 {
+	display: inline;
+	font-size: 1.5em;
+	text-align: center;
+}
+h2 {
+	font-size: 1em;
+	text-align: center;
+}
+h5{
+	font-size: 1em;
+	}
+h6{
+font-size: .85em;
+text-transform: uppercase;
+height: 1.1em;
+line-height: 1.1em;
+padding-left: .5em;
+margin: .85em 0;
+border-width: 2px;
+border-style: solid;
+border-top: none;
+border-right: none;
+border-bottom: none;
+}
+a:link, a:visited {
+	color: #000;
+}
+a:hover, a:active {
+	color: #fff;
+}
+p {
+	line-height: 140%;
+	margin-bottom: .75em;
+}
+p.datum{
+font-weight: bold;
+padding-left: 1.5em;
+}
+.oddelitko {   /*pozor ještě jedno nastavení pro oddelitko v #nadhlave níže pod nastavením #nadhlavy*/
+	color: #000;
+	font-weight: bold;
+	font-size: 80%;
+	margin: 0 .2em;
+}
+p .oddelitko{
+	font-size: 100%;
+}
+#hlava .oddelitko{
+	margin: 0 .1em;
+}
+hr.cistic{ /*čistič*/
+	height:0;
+	border: none;
+	clear: both;
+}	
+#napln ol, #napln ul{
+	padding-left: 2em;
+	margin-bottom: 1em;
+}
+#napln li{
+	line-height: 140%;
+	margin-bottom: 1em;
+}
+#telo {
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	width: 900px;
+	margin-left: -450px;
+	background-color: transparent;
+	/*border: 1px red solid;*/
+	}
+#stat {
+	float: right;
+	width: 600px;
+	border-top-right-radius: 25px;
+	-webkit-border-top-right-radius: 25px;
+	-moz-border-radius-topright: 25px;
+	}
+/*#napln ul li{
+	display: block;
+	list-style-type: disc !important;
+	margin-bottom: .75em;
+	margin-left: .75em;
+}*/
+#bok {
+	position: fixed;
+	top: 120px;
+	left: 50%;
+	width: 25px;
+	margin-left: -449px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+  }
+#hlava {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	/*background-color: #eee;
+	border: 1px #6c5b00 solid;*/
+}
+#hlava ul li, #hlava ul li h2, #hlava ul li h3, #hlava ul li h4, #obsah ul li, #obsah ul li h5{
+	display: inline;
+	color: #000;	
+	text-align: center;
+	font-size: .85em;
+	height: 25px;
+	line-height: 25px;
+	padding-right: .1em;
+	padding-left: .1em;
+	
+}
+#pod-podhlava li{
+	margin-left: -0.3em;
+	margin-right: .1em;
+	}
+#hlava ul .oddelitko:last-child, #obsah ul .oddelitko:last-child {
+	display:none;
+	}
+#hlava a, #obsah a {
+	text-decoration: none;
+}
+#nadhlava, #podhlava, #pod-podhlava {
+	width: 899px;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 auto;
+	border: 1px #6c5b00 solid;
+	border-top: none;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-moz-border-radius-bottomleft: 25px;
+}
+#nadhlava, #podhlava{
+	border-top: none;
+	border-bottom: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#nadhlava .oddelitko{
+margin-right: -0.5em
+}
+#podhlava, #podhlava a:link, #podhlava a:visited {
+	color: #fff;
+}
+#podhlava a:hover, #podhlava a:active {
+	color: #000;
+}
+#pod-podhlava {
+/*border: none;
+display: none;*/
+}
+.ramec{/*varianta s fixním výčtem, tedy k odmazání*/
+	position: fixed;
+	height: 100%;
+	
+}
+#pata{
+	position: relative;
+	left: 50%;
+	bottom: -800px;
+	font-size: .75em;
+	text-align:center;
+	width: 900px;
+	margin-left: -450px;
+}

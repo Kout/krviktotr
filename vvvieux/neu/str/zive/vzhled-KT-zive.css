@@ -1,0 +1,18 @@
+#napln, #nadpis, #obsah, #obsah hr, #vycet, #nadhlava, #podhlava, #pod-podhlava {
+	border-color: #6c5b00;
+}
+.oddelitko {
+	color: #6c5b00;
+}
+#podhlava {
+	background-color: #ffd700;
+}
+#nadpis, #vycet, #pod-podhlava {
+	background-color: #ffe973;
+}
+#obsah, #nadhlava {
+	background-color: #fff3b2;
+}
+#napln {
+	background-color: #fff8d5;
+}

@@ -1,0 +1,165 @@
+--------------------------------------
+02/01/2008 - release of iManager V 1.2.8 build 02012008
+- added interface file for tinyMCE 3.0
+- updated phpThumb to latest version - 1.7.9- December 2007
+
+--------------------------------------
+10/05/2006 - release of iManager V 1.2.7 build 10052006
+
+- updated phpThumb to latest version - 1.7.5- October 2006
+
+--------------------------------------
+09/11/2006 - release of iManager V 1.2.6 build 09112006
+
+- hyphens in file names are not stripped anymore
+
+--------------------------------------
+08/29/2006 - release of iManager V 1.2.6 build 08292006
+
+- fixed remote file inclusion vulnerability (unset) 
+
+--------------------------------------
+08/10/2006 - release of iManager V 1.2.6 build 08102006
+
+- fixed an issue with width and height values when image was resized in 
+  the editor
+
+--------------------------------------
+08/02/2006 - release of iManager V 1.2.6 build 08022006
+
+- fixed a security in the renaming function
+
+--------------------------------------
+07/18/2006 - release of iManager V 1.2.5 build 07182006
+- updated phpThumb to latest version - 1.7.3-07112006
+
+--------------------------------------
+07/15/2006 - release of iManager V 1.2.4 build 07152006
+
+- fixed an issue with the loading message in the popup preview window
+
+--------------------------------------
+06/08/2006 - release of iManager V 1.2.3 build 06082006
+
+- updated phpThumb to latest version - 1.7.2 May 2006
+- fixed an issue with FCKeditor V 2.3
+
+--------------------------------------
+05/03/2006 - release of iManager V 1.2.3 build 05032006
+
+- added new interface files for tinyMCE 2.05 and higher
+- updated phpThumb to latest version - 1.7.1-03162006
+- fixed an issue when entering crop values
+
+--------------------------------------
+01/19/2006 - release of iManager V 1.2.3 build 01192006
+
+- language pack added: german - provided by Andreas Pilz
+
+--------------------------------------
+12/31/2005 - release of iManager V 1.2.2 build 12312005
+
+- added plugin info for tinyMCE
+- updated phpThumb to latest version - 1.6.3-200512181059
+
+--------------------------------------
+12/10/2005 - release of iManager V 1.2.2 build 12102005
+
+- fixed some layout issues with Firefox V 1.5
+- updated phpThumb to latest version - 1.6.3 December
+
+--------------------------------------
+11/01/2005 - release of iManager V 1.2.1 build 11012005
+
+- fixed a bug in rdirs.php where first letter got cut off in directory names
+- updated phpThumb to latest version - 1.6.2 November
+
+--------------------------------------
+10/07/2005 - release of iManager V 1.2.1 build 10072005
+
+- fixed an issue with the caption function; replaced 'div' and 'p' tags with 'span'
+
+--------------------------------------
+09/12/2005 - release of iManager V 1.2 build 09122005
+
+- fixed an issue with the full size preview popup
+- updated phpThumb to latest version
+
+--------------------------------------
+08/30/2005 - release of iManager V 1.2 build 08302005
+
+- added missing config parameter: $cfg['furl'];
+
+--------------------------------------
+08/09/2005 - release of iManager V 1.2 build 08092005
+
+- simplified the WYSIWYG editor interface files
+- added interface file for the HTMLarea editor
+- added image caption function
+
+--------------------------------------
+08/04/2005 - release of iManager V 1.1 build 08042005
+
+- fixed a little issue with the size of the crop preview div
+
+--------------------------------------
+07/20/2005 - release of iManager V 1.1 build 07202005
+
+- updated phpThumb to V 1.6 - please see phpThumb changelog for details
+- watermark text can now encompass multiple lines
+
+--------------------------------------
+07/09/2005 - release of iManager V 1.1 build 07092005
+
+- language pack added: danish - provided by Kim Michael Nielsen
+
+--------------------------------------
+07/07/2005 - release of iManager V 1.1 build 07072005
+
+- image selection: added a button to switch between thumbnail- and list view
+- added message when uploading image
+
+--------------------------------------
+06/28/2005 - release of iManager V 1.1 build 06282005
+
+- fixed an issue with the full size preview window
+- changed tinyMCE file to be compatible with V 1.45
+  if you like to use iBrowser with an earlier version of tinyMCE, please change 
+  'urlconverter_callback' to 'urlconvertor_callback' in the editor_plugin.js file
+- fixed an issue with the tinyMCE file and the 'onclick' event
+
+--------------------------------------
+06/15/2005 - release of iManager V 1.1 build 06152005
+
+- fixed an issue with the language class - thanks to René de Kat
+- fixed an issue with the uploading procedure when image was smaller than predifined size
+- fixed some minor layout issues
+
+--------------------------------------
+06/10/2005 - release of iManager V 1.1 build 06102005
+
+- added more mask files - more available on request
+- some layout changes
+- added $cfg['list'] parameter (default = true); if set to false, image selection dropdown will show thumbnail instead   of image list
+- some code simplifications
+- added large preview for overlay and mask images
+- changed container of mask and watermark images to scrollable div
+- some bug fixes
+
+--------------------------------------
+06/01/2005 - release of iManager V 1.0 build 06012005
+
+- fixed toolbox link (resize and wizard)
+- fixed a bug when $cfg['upload'] was set to 'false'; thanks to - René de Kat
+- fixed the appearance of the file div although, all file functions were set to false
+- added missing $cfg['create'] parameter in config file
+
+--------------------------------------
+05/27/2005 - release of iManager V 1.0 build 05272005
+
+- updated phpThumb to 1.5.4
+- changed readme file for SPAW installation
+- fixed an issue with the save function when in standalone mode
+
+--------------------------------------
+05/26/2005 - release of iManager V 1.0 build 05262005

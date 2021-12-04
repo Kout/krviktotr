@@ -1,0 +1,7 @@
+RewriteEngine On   
+#RewriteRule ^(.*)(!\.less)$ index.php?str=$1 [L,QSA]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?str=$1 [L,QSA]
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?rodic=$1&str=2 [L,QSA]
+
+ErrorDocument 404 chipka.htm

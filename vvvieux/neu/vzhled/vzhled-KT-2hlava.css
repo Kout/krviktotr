@@ -1,0 +1,19 @@
+#nadhlava{
+	width: 899px;
+}
+#podhlava {
+	border: 1px #000 solid;
+	border-top: none;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	-webkit-border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-moz-border-radius-bottomleft: 25px;
+}
+#pod-podhlava{
+	display:none;
+}
+#telo {
+	top: 60px;
+}
