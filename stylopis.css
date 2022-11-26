@@ -1,3 +1,9 @@
+:root {
+    --color-text: #303030;
+    --color-bg: rgba(207 207 207 / 0.5);
+    --primary: #d82233;
+}
+
 body {
     box-sizing: border-box;
     display: flex;
@@ -5,9 +11,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: rgba(207 207 207 / 0.5);
+    background-color: var(--color-bg);
     margin: 0;
-    color: #303030;
+    color: var(--color-text);
     font-family: Verdana, Geneva, sans-serif;
     font-size: max(1.24em, 1.24vw);
 }
@@ -17,7 +23,7 @@ h1 {
 }
 
 strong {
-    color: #d82c33;
+    color: var(--primary);
     animation: text-flicker-in-glow 2.5s linear both 0.5s;
 }
 
