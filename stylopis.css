@@ -40,10 +40,32 @@ p > a {
     cursor: default;
 }
 
+a > span {
+    display: none;
+}
+
 img {
     max-width: 100%;
     padding: 2px;
-    border: 1px solid #303030;
+    border: 1px solid currentColor;
+}
+
+footer,
+footer ul,
+footer li {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+    font-size: 0.8em;
+}
+
+footer ul {
+    padding-left: 1em;
+    border-left: 1px solid currentColor;
+}
+
+footer a:hover {
+    color: var(--primary);
 }
 
 /* ----------------------------------------------
