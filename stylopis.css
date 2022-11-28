@@ -15,7 +15,7 @@ body {
     margin: 0;
     color: var(--color-text);
     font-family: Verdana, Geneva, sans-serif;
-    font-size: max(1.24em, 1.24vw);
+    font-size: clamp(1.24em, 1.24vw, 2rem);
 }
 
 h1 {
