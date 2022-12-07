@@ -51,6 +51,15 @@ img {
 	border: 1px solid currentColor;
 }
 
+s {
+	text-decoration-color: var(--primary);
+}
+
+p:has(s)::before {
+	content: '✓';
+	text-decoration: none;
+}
+
 footer,
 footer ul,
 footer li {
