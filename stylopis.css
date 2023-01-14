@@ -19,12 +19,9 @@ body {
 }
 
 h1 {
-	animation: tracking-in-expand 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-strong {
+	animation: text-flicker-in-glow 2.5s linear both;
 	color: var(--primary);
-	animation: text-flicker-in-glow 2.5s linear both 0.5s;
+	text-transform: lowercase;
 }
 
 p {
