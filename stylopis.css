@@ -24,17 +24,13 @@ h1 {
 	text-transform: lowercase;
 }
 
+footer,
 p {
 	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
 
 a {
 	color: inherit;
-}
-
-p > a {
-	text-decoration: none;
-	cursor: default;
 }
 
 a > span {
@@ -46,15 +42,6 @@ img {
 	height: auto;
 	padding: 2px;
 	border: 1px solid currentColor;
-}
-
-s {
-	text-decoration-color: var(--primary);
-}
-
-p:has(s)::before {
-	content: '✓';
-	text-decoration: none;
 }
 
 footer,
@@ -71,35 +58,14 @@ footer ul {
 	border-left: 1px solid currentColor;
 }
 
-footer a:hover {
+footer li a:hover {
 	color: var(--primary);
 }
 
-.clock {
-	display: flex;
-	flex-wrap: wrap;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(4em, 1fr));
-	gap: 1em;
-	font-size: clamp(0.7rem, 2vw, 2.5rem);
-}
-
-[data-unit] {
-	padding: 0.75em;
-	background-color: var(--color-bg);
-	font-family: monospace;
-	font-size: 1.5em;
-	font-weight: 600;
-	text-align: center;
-}
-
-[data-unit]::after {
-	content: attr(data-unit);
-	display: block;
-	margin-top: .5em;
-	opacity: .6;
-	font-size: max(.25em, .5rem);
-	font-weight: 400;
+/* link to the archive */
+a[href="/index.alt.html"] {
+	text-decoration: none;
+	cursor: default;
 }
 
 /* ----------------------------------------------
@@ -201,19 +167,6 @@ footer a:hover {
 		opacity: 1;
 	}
 	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes tracking-in-expand {
-	0% {
-		letter-spacing: -0.5em;
-		opacity: 0;
-	}
-	40% {
-		opacity: 0.6;
-	}
-		100% {
 		opacity: 1;
 	}
 }
