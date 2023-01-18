@@ -4,6 +4,16 @@
 	--primary: #d82233;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	box-sizing: border-box;
 	display: flex;
