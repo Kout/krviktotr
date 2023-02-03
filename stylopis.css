@@ -39,6 +39,11 @@ p {
 	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
 
+blockquote {
+	font-family: cursive;
+	font-style: italic;
+}
+
 a {
 	color: inherit;
 }
