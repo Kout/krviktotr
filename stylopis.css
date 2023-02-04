@@ -18,8 +18,6 @@ body {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	padding: 1rem;
 	background-color: var(--color-bg);
 	margin: 0;
@@ -46,7 +44,6 @@ footer {
 }
 
 blockquote {
-	font-family: cursive;
 	font-style: italic;
 }
 
