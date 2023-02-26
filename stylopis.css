@@ -62,6 +62,10 @@ img {
 	border: 1px solid currentColor;
 }
 
+article {
+	border-bottom: 1px dashed #fff;
+}
+
 footer,
 footer ul,
 footer li {
