@@ -90,7 +90,7 @@ a > span {
 
 a[href^="tel:"] {
 	text-decoration: none;
-	white-space
+	white-space: nowrap;
 }
 
 address {
