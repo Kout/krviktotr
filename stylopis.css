@@ -100,15 +100,21 @@ article {
 	border-bottom: 1px dashed #fff;
 }
 
-article:has(> a) {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: masonry;
-	gap: 0.5rem;
+article:has(> a) img {
+	width: 100%;
 }
 
-article:has(> a) h2 {
-	grid-column: 1 / -1;
+@media screen and (min-width: 360px) {
+
+	article:has(> a) {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+		gap: 0.5rem;
+	}
+
+	article:has(> a) h2 {
+		grid-column: 1 / -1;
+	}
 }
 
 .blueimp-gallery > .description {
@@ -118,6 +124,7 @@ article:has(> a) h2 {
 	color: #fff;
 	display: none;
 }
+
 .blueimp-gallery-controls > .description {
 	display: block;
 }
