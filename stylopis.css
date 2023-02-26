@@ -41,6 +41,13 @@ footer {
 main,
 footer {
 	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+
+header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: start;
+	align-items: center;
+	gap: 2rem;
 }
 
 blockquote {
