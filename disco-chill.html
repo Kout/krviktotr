@@ -109,6 +109,35 @@
         </li>
     </ol>
     <script>
+        // Get all the figure elements
+        const figures = document.querySelectorAll('figure');
+
+        // Initialize a variable to keep track of the currently playing audio
+        let currentlyPlayingAudio = null;
+
+        // Add a click event listener to each figure
+        figures.forEach((figure) => {
+          figure.addEventListener('click', () => {
+            // Get the audio element that is the direct ascendant of the clicked figure
+            const audio = figure.querySelector('audio');
+
+            // If an audio is already playing, return without doing anything
+            if (currentlyPlayingAudio !== null && currentlyPlayingAudio !== audio) {
+              return;
+            }
+
+            // Play the audio
+            audio.play();
+
+            // Set the currently playing audio
+            currentlyPlayingAudio = audio;
+
+            // When the audio finishes playing, reset the currently playing audio
+            audio.addEventListener('ended', () => {
+              currentlyPlayingAudio = null;
+            });
+          });
+        });
     </script>
 </body>
 </html>
