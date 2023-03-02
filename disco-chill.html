@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -227,31 +228,32 @@
 
         // Add a click event listener to each figure
         figures.forEach((figure) => {
-          figure.addEventListener('click', () => {
-            // Get the audio element that is the direct ascendant of the clicked figure
-            const audio = figure.querySelector('audio');
+            figure.addEventListener('click', () => {
+                // Get the audio element that is the direct ascendant of the clicked figure
+                const audio = figure.querySelector('audio');
 
-            // If an audio is already playing, return without doing anything
-            if (currentlyPlayingAudio !== null && currentlyPlayingAudio !== audio) {
-              return;
-            }
+                // If an audio is already playing, return without doing anything
+                if (currentlyPlayingAudio !== null && currentlyPlayingAudio !== audio) {
+                    return;
+                }
 
-            // Add a class name to the clicked figure
-            figure.classList.add('playing');
+                // Add a class name to the clicked figure
+                figure.classList.add('playing');
 
-            // Play the audio
-            audio.play();
+                // Play the audio
+                audio.play();
 
-            // Set the currently playing audio
-            currentlyPlayingAudio = audio;
+                // Set the currently playing audio
+                currentlyPlayingAudio = audio;
 
-            // When the audio finishes playing, reset the currently playing audio
-            audio.addEventListener('ended', () => {
-              currentlyPlayingAudio = null;
-                figure.classList.remove('playing');
+                // When the audio finishes playing, reset the currently playing audio
+                audio.addEventListener('ended', () => {
+                    currentlyPlayingAudio = null;
+                    figure.classList.remove('playing');
+                });
             });
-          });
         });
     </script>
 </body>
+
 </html>
