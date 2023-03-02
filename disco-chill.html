@@ -32,11 +32,28 @@
 
         ol {
             list-style: none;
+            position: relative;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
             grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
             gap: 10px;
-            padding-left: 0;
+            padding: 10px;
+            background-color: #8888;
+        }
+
+        ol::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            background-image: none, url('/obr/Ivan_Vyskocil_2013.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0.25rem;
         }
 
         ol:has(.playing) li:not(.playing) {
@@ -51,12 +68,12 @@
             align-items: center;
             aspect-ratio: 1;
             padding: 1rem;
-            background-color: darkturquoise;
+            background-color: #00ced1cc;
             border-radius: 0.25rem;
         }
 
         li:hover {
-            background-color: cornflowerblue;
+            background-color: #6495edcc;
         }
 
         .playing {
@@ -87,31 +104,31 @@
 
         @keyframes vyskochill-speaking {
             0% {
-                background-color: #19dcea;
+                background-color: #19dceacc;
             }
 
             15% {
-                background-color: cornflowerblue;
+                background-color: #6495edcc;
             }
 
             30% {
-                background-color: #b22cff;
+                background-color: #b22cffcc;
             }
 
             45% {
-                background-color: #ea2222;
+                background-color: #ea2222cc;
             }
 
             60% {
-                background-color: darkturquoise;
+                background-color: #00ced1cc;
             }
 
             75% {
-                background-color: #f5be10;
+                background-color: #f5be10cc;
             }
 
             100% {
-                background-color: #3bd80d;
+                background-color: #3bd80dcc;
             }
         }
     </style>
