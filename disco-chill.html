@@ -22,6 +22,12 @@
             font-family: sans-serif;
         }
 
+        .on-air h1 span ,
+        .on-air h2 span {
+            animation: vyskochill-onair 1.5s linear infinite alternate both;
+            animation-delay: var(--delay);
+        }
+
         main {
             max-width: 620px;
             margin: auto;
@@ -41,14 +47,18 @@
 
         h1 span:first-child,
         h1 span:nth-child(7),
+        h1 span:nth-child(11),
         h2 span:nth-child(5) {
             color: #b64e6e;
+            --delay: .75s;
         }
 
         h1 span:nth-child(2),
+        h1 span:nth-child(9),
         h2 span:nth-child(8),
         h2 span:nth-child(4) {
             color: #aaa214;
+            --delay: 1.5s;
         }
 
         h1 span:nth-child(3),
@@ -56,19 +66,23 @@
         h2 span:first-child,
         h2 span:nth-child(9) {
             color: #be3b0d;
+            --delay: .5s;
         }
 
         h1 span:nth-child(4),
-        h2 span:nth-child(2),
+        h1 span:nth-child(12),
         h2 span:nth-child(3),
         h2 span:nth-child(10) {
             color: #55548d;
+            --delay: -.25s;
         }
 
         h1 span:nth-child(5),
+        h1 span:nth-child(10),
         h2 span:nth-child(2),
         h2 span:nth-child(6) {
             color: #117642;
+            --delay: 1s;
         }
 
 
@@ -178,6 +192,35 @@
                 background-color: #b64e6ecc;
             }
         }
+
+        @keyframes vyskochill-onair {
+            0% {
+                color: #b64e6ecc;
+            }
+
+            15% {
+                color: #aaa214cc;
+            }
+
+            30% {
+                color: #be3b0dcc;
+            }
+
+            45% {
+                color: #55548dcc;
+            }
+
+            60% {
+                color: #117642cc;
+            }
+
+            75% {
+                color: #e7b6bccc;
+            }
+            100% {
+                color: #b64e6ecc;
+            }
+        }
     </style>
 </head>
 
@@ -185,7 +228,7 @@
     <header>
         <h1>
             <span>N</span><span>a</span><span>b</span><span>l</span><span>í</span><span>z</span><span>k</span><span>o</span>
-            2023
+            <span>2</span><span>0</span><span>2</span><span>3</span>
         </h1>
     </header>
     <main>
@@ -311,6 +354,7 @@
 
                 // Add a class name to the clicked figure
                 figure.classList.add('playing');
+                document.body.classList.add('on-air');
 
                 // Play the audio
                 audio.play();
@@ -322,6 +366,7 @@
                 audio.addEventListener('ended', () => {
                     currentlyPlayingAudio = null;
                     figure.classList.remove('playing');
+                    document.body.classList.remove('on-air');
                 });
             });
         });
