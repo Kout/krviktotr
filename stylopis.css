@@ -40,6 +40,10 @@ h1 {
 	text-transform: lowercase;
 }
 
+h1 > strong {
+	color: var(--color-text);
+}
+
 header,
 main,
 footer {
