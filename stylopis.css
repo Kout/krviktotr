@@ -97,6 +97,11 @@ a[href^="tel:"] {
 	white-space: nowrap;
 }
 
+strong em {
+	font-style: normal;
+	color: var(--primary);
+}
+
 address {
 	font-style: normal;
 }
