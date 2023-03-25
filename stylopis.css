@@ -1,13 +1,15 @@
 :root {
 	--color-text: #303030;
-s	--color-bg: rgba(207 207 207 / 0.15);
+	--color-bg: rgba(207 207 207 / 0.15);
+	--color-bd: rgba(207 207 207 / 1);
 	--primary: #d82233;
+	--section-spacer: 3rem;
 }
 
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	scroll-padding-top: 1.25rem;
+	scroll-padding-top: var(--section-spacer);
 }
 
 *,
@@ -111,7 +113,8 @@ img {
 }
 
 article {
-	border-bottom: 1px dashed #fff;
+	padding-block: var(--section-spacer);
+	border-bottom: 1px dashed var(--color-bd);
 }
 
 article:has(> a) img {
