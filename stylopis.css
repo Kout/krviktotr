@@ -80,13 +80,12 @@ select {
 	--color-bg: rgba(207 207 207 / 0.15);
 	--color-bd: rgba(207 207 207 / 1);
 	--primary: #d82233;
-	--section-spacer: 3rem;
 }
 
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	scroll-padding-top: var(--section-spacer);
+	scroll-padding-top: var(--size-8);
 }
 
 *,
@@ -98,12 +97,12 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	padding: 1rem;
+	padding: var(--size-3);
 	background-color: var(--color-bg);
 	margin: 0;
 	color: var(--color-text);
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: clamp(1rem, 1.25vw, 1.25rem);
+	font-size: clamp(1.125rem, 1.25vw, 1.25rem);
 }
 
 h1,
@@ -113,7 +112,18 @@ h3 {
 }
 
 h1 {
+	margin-bottom: var(--size-5);
 	text-transform: lowercase;
+}
+
+h2 {
+	margin-bottom: var(--size-4);
+}
+
+h3,
+p,
+li {
+	margin-bottom: var(--size-3);
 }
 
 h1 > strong {
@@ -190,7 +200,7 @@ img {
 }
 
 article {
-	padding-block: var(--section-spacer);
+	padding-block: var(--size-8);
 	border-bottom: 1px dashed var(--color-bd);
 }
 
@@ -203,7 +213,7 @@ article:has(> a) img {
 	article:has(> a) {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-		gap: 0.5rem;
+		gap: var(--size-2);
 	}
 
 	article:has(> a) h2 {
@@ -228,12 +238,12 @@ footer ul,
 footer li {
 	display: flex;
 	align-items: baseline;
-	gap: 1em;
+	gap: var(--size-3);
 	font-size: 0.8em;
 }
 
 footer ul {
-	padding-left: 1em;
+	padding-left: var(--size-3);
 	border-left: 1px solid currentColor;
 }
 
