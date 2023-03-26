@@ -80,7 +80,8 @@ select {
 	--color-text: #303030;
 	--color-bg: rgba(207 207 207 / 0.15);
 	--color-bd: rgba(207 207 207 / 1);
-	--primary: #d82233;
+	--primary: rgba(216 34 51 / 1);
+	--primary-light: rgba(216 34 51 / 0.05);
 }
 
 html {
@@ -212,8 +213,8 @@ article {
 /* upoutávka */
 article > article {
 	padding: var(--size-8) var(--size-8);
-	background-color: var(--stone-3);
-	border: 0;
+	background-color: var(--primary-light);
+	border: 4px var(--primary) solid;
 	border-radius: var(--radius-2);
 	margin-bottom: var(--size-5);
 }
