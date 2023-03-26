@@ -195,8 +195,9 @@ address {
 img {
 	max-width: 100%;
 	height: auto;
-	padding: 2px;
-	border: 1px solid currentColor;
+	border: 1px solid var(--stone-6);
+	border-radius: var(--radius-2);
+	overflow: hidden;
 }
 
 article {
@@ -204,8 +205,19 @@ article {
 	border-bottom: 1px dashed var(--color-bd);
 }
 
+/* upoutávka */
+article > article {
+	padding: var(--size-8) var(--size-8);
+	background-color: var(--stone-3);
+	border: 0;
+	border-radius: var(--radius-2);
+	margin-bottom: var(--size-5);
+}
+
 article:has(> a) img {
 	width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
 }
 
 @media screen and (min-width: 360px) {
