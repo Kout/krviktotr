@@ -198,7 +198,6 @@ img {
 	height: auto;
 	border: 1px solid var(--stone-6);
 	border-radius: var(--radius-2);
-	overflow: hidden;
 }
 
 article {
@@ -215,10 +214,15 @@ article > article {
 	margin-bottom: var(--size-5);
 }
 
+/* galerie */
 article:has(> a) img {
-	width: 100%;
 	aspect-ratio: 3 / 2;
 	object-fit: cover;
+	width: 100%;
+}
+
+a:has(> img) {
+	margin-bottom: var(--size-2);
 }
 
 @media screen and (min-width: 360px) {
@@ -227,10 +231,15 @@ article:has(> a) img {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 		gap: var(--size-2);
+		margin-bottom: 0;
 	}
 
 	article:has(> a) h2 {
 		grid-column: 1 / -1;
+	}
+
+	a:has(> img) {
+		margin-bottom: 0;
 	}
 }
 
