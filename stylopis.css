@@ -121,6 +121,10 @@ h2 {
 	margin-bottom: var(--size-4);
 }
 
+h3:not(:first-child) {
+	margin-top: var(--size-8);
+}
+
 h3,
 p,
 li {
