@@ -28,9 +28,20 @@
             animation-delay: var(--delay);
         }
 
-        main {
+        main,
+        footer {
             max-width: 620px;
             margin: auto;
+        }
+
+        footer {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        a:link,
+        a:visited {
+            color: #fff;
         }
 
         h1,
@@ -334,6 +345,9 @@
             </li>
         </ol>
     </main>
+    <footer>
+        <p>Vymyšlened by <a href="/index.html" target="_blank">Krvik Totr</a> ⓒ 2023</p>
+    </footer>
     <script>
         // Get all the figure elements
         const figures = document.querySelectorAll('li');
