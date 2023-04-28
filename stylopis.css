@@ -219,30 +219,30 @@ article > article {
 }
 
 /* galerie */
-article:has(> a) img {
+a[href^="/obr/"] img {
 	aspect-ratio: 3 / 2;
 	object-fit: cover;
 	width: 100%;
 }
 
-a:has(> img) {
+a[href^="/obr/"] img {
 	margin-bottom: var(--size-2);
 }
 
 @media screen and (min-width: 360px) {
 
-	article:has(> a) {
+	article[id="kt-gallery"] {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 		gap: var(--size-2);
 		margin-bottom: 0;
 	}
 
-	article:has(> a) h2 {
+	article[id="kt-gallery"] h2 {
 		grid-column: 1 / -1;
 	}
 
-	a:has(> img) {
+	a[href^="/obr/"] img {
 		margin-bottom: 0;
 	}
 }
