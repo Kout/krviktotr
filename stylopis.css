@@ -104,7 +104,7 @@ body {
 	margin: 0;
 	color: var(--color-text);
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: clamp(1.125rem, 1.25vw, 1.25rem);
+	font-size: clamp(1rem, 1.25vw, 1.25rem);
 }
 
 h1,
